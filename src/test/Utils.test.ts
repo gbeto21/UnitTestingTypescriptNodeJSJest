@@ -12,6 +12,8 @@ describe("Utils test suite", () => {
       // Clearing mocks
     })
 
+    it.todo("test long strings")
+
     it("Should return correct Uppercase", () => {
       const actual = sut.toUpperCase("abc")
 
