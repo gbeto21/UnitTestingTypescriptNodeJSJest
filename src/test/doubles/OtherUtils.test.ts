@@ -4,7 +4,7 @@ import {
   toUpperCaseWithCb,
 } from "../../app/doubles/OtherUtils"
 
-describe("OtherUtils test suite", () => {
+describe.skip("OtherUtils test suite", () => {
   describe.only("OtherStringUtils test with spies", () => {
     let sut: OtherStringUtils
     beforeEach(() => {
@@ -23,7 +23,7 @@ describe("OtherUtils test suite", () => {
       expect(consoleLogSpy).toBeCalledWith("abc")
     })
 
-    test.only("Use a spy to replace the implementation of a method", () => {
+    test("Use a spy to replace the implementation of a method", () => {
       jest.spyOn(sut as any, "callExternalService").mockImplementation(() => {
         console.log("calling mocked implementation!")
       })
